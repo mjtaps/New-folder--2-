@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barangay Certificates</title>
+  
+  <style>
+     .home-btn {
+      text-decoration: none;
+      padding: 10px 15px;
+      background: #008000; 
+      border-radius: 4px;
+      color: rgb(2, 1, 1);
+      border: none;
+      }
+
+      .home-btn:hover {
+      background: #006100;
+      }
+      a {
+        text-decoration: none;
+      }
+    .request-buttons-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .request-button {
+      flex: 1;
+      padding: 100px;
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <div style="display: flex; justify-content: space-between">
+    <a class="button" href="index.html">Home</a>
+  </div>
+
+  <h1>Barangay Certificates</h1>
+
+  <p>10000000000000</p>
+
+  <div class="request-buttons-container">
+    <button class="request-button" onclick="request('barangayClearance')">
+      Request Barangay Clearance
+      <br/>
+      <small>Official document stating you have no derogatory record</small> 
+    </button>
+
+    <button class="request-button" onclick="request('residencyCertificate')">
+     Request Residency Certificate
+     <br/>
+     <small>Certificate stating you are a resident of the Barangay</small>
+    </button>
+
+    <button class="request-button" onclick="request('barangayPermit')">
+      Request Barangay Permit
+      <br/>
+      <small>Permit for construction, business operations, etc</small>
+    </button>
+  </div>
+
+  <script>
+    function request(type) {
+      alert(`Request for ${type} submitted!`);
+    }
+    // certificates.html
+
+    function request(type) {
+      localStorage.setItem("pendingRequest", type);
+      alert(`Request for ${type} submitted!`);
+    }
+
+  </script>
+
+
+
+</body>
+</html>

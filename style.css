@@ -1,0 +1,63 @@
+.box {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;  
+    display: inline-block;
+    width: fit-content;
+    background-color: #1cf723;
+    text-decoration: none;
+  }
+  
+  h2 {
+    margin: 0; 
+  }
+  
+  .dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center; 
+    position: relative;
+
+  }
+     
+  .box {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+    background: #f6f6f6; 
+    padding: 20px;
+    transition: all 0.3s; 
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  a {
+    text-decoration: none;
+  }
+
+/* Add CSS for Facebook and Contact logos */
+#social-icons {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#social-icons a {
+    margin-left: 10px;
+    color: #56f80a;
+    text-decoration: none;
+    font-size: 24px;
+}
+

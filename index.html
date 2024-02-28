@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barangay Pengue-Ruyu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    
+
+    <nav>
+    <a href="admin/adminlogin.html" onclick="showLogin()" id="login-trigger">Admin Login</a>  
+  </nav>
+  
+  <script>
+  function showLogin() {
+  
+    // Open login modal popup
+    openLoginModal();
+  
+    // Redirect to login page
+    window.location.href = "adminlogin.html"; 
+  
+  }
+  </script>
+<div id="admin-dashboard">
+
+    <div class="box">
+        <h2><a href="official.html">Barangay Officials & Staff</a></h2>
+    </div>
+
+    <div class="box">
+        <h2><a href="residents.html">Residents Record</a></h2>
+    </div>
+
+    <div class="box">
+        <h2><a href="certificates.html">Barangay Certificates</a></h2>
+    </div>
+
+    <div class="box">
+        <h2><a href="blotter.html">Blotter Records</a></h2>
+    </div>
+
+    <div class="box">
+        <h2><a href="revenue.html">Barangay Accomplishment Report</a></h2>
+    </div>
+
+    <!-- Add Facebook and Contact logos -->
+    <div id="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100068863781763" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+    </div>
+
+</div>
+
+
+</body>
+</html>
